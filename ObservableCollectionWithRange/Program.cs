@@ -17,9 +17,11 @@ namespace ObservableCollectionWithRange
     {
         static void Main(string[] args)
         {
-            var ocwr = new ObservableCollectionWithRange<string>();// new List<string>() { "george", "xiros" });
+            var ocwr = new ObservableCollectionWithRange<string>(new List<string>() { "george", "xiros" });
             ocwr.CollectionChanged += Ocwr_CollectionChanged;
+
             ocwr.AddRange(new List<string>() { "test 1", "test 2", "test 3", "test 4" });
+
             //ocwr.Add("test 1");
             //ocwr.Add("test 2");
             //ocwr.Add("test 3");

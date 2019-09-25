@@ -9,18 +9,13 @@ namespace ObservableCollectionWithRange
         public class ObservableCollectionWithRange<T> : ObservableCollection<T>
         {
             #region Constructors
+
             public ObservableCollectionWithRange() : base() { }
 
-            public ObservableCollectionWithRange(List<T> list)
-                : base(list)
-            {
+            public ObservableCollectionWithRange(List<T> list) : base(list) { }
 
-            }
-            public ObservableCollectionWithRange(IEnumerable<T> collection) : base(collection)
-            {
-
-            }
-
+            public ObservableCollectionWithRange(IEnumerable<T> collection) : base(collection) { }
+            
             #endregion Constructors
 
             public void AddRange(IEnumerable<T> items)
